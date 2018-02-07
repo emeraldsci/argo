@@ -248,7 +248,7 @@ func (woc *wfOperationCtx) newExecContainer(name string, privileged bool) *apiv1
 		Resources: apiv1.ResourceRequirements{
 			Limits: apiv1.ResourceList{
 				apiv1.ResourceCPU:    resource.MustParse("0.5"),
-				apiv1.ResourceMemory: resource.MustParse("512Mi"),
+				apiv1.ResourceMemory: resource.MustParse("1Gi"),
 			},
 			Requests: apiv1.ResourceList{
 				apiv1.ResourceCPU:    resource.MustParse("0.1"),
